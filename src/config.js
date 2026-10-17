@@ -21,8 +21,7 @@ export const REFRESH_USER_TOKEN_SIGNATURE = process.env.REFRESH_USER_TOKEN_SIGNA
 export const REFRESH_SYSTEM_TOKEN_SIGNATURE = process.env.REFRESH_SYSTEM_TOKEN_SIGNATURE;
 
 // sigin with google configration client id
-export const WEB_CLIENT_IDS = process.env.WEB_CLIENT_IDS.split(",");
-
+export const WEB_CLIENT_IDS = process.env.WEB_CLIENT_IDS ? process.env.WEB_CLIENT_IDS.split(",") : [];
 // mail configration
 export const APP_PASSWORD = process.env.APP_PASSWORD;
 export const APP_EMAIL = process.env.APP_EMAIL;
